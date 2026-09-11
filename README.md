@@ -57,10 +57,10 @@ O menor caminho de ponta a ponta que já entrega valor:
 
 | Nome | Papel |
 |---|---|
-| Pedro Antônio Raiol de Souza | _preencher_ |
-| Mariana Ribeiro | _preencher_ |
-| Pedro Castro | _preencher_ |
-| Tainá | _preencher_ |
+| Pedro Antônio Raiol de Souza | Backend / API e banco de dados |
+| Mariana Gonçalves Ribeiro | Frontend / Interface |
+| Pedro Henrique Santos de Castro | Documentação e requisitos |
+| Tainá Alves Bahia | QA e DevOps (testes e CI) |
 
 ## Contexto acadêmico
 
