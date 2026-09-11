@@ -1,0 +1,1 @@
+Após o preenchimento da lista usamos a IA para ajustar o README que criamos.
