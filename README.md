@@ -70,14 +70,14 @@ O menor caminho de ponta a ponta que já entrega valor:
 
 ## Status
 
-Em fase de definição de escopo (P0). Ainda não há implementação.
+P0 (escopo) e P1 (visão do produto e backlog) entregues. Ainda não há implementação.
 
 ## Cronograma
 
 | Entrega | Data | Conteúdo |
 |---|---|---|
-| P0 | 11/09 (hoje) | Equipe, repositório e canvas |
-| P1 | 23/09 | Visão do produto e backlog |
+| P0 | 11/09 ✅ | Equipe, repositório e canvas |
+| P1 | 23/09 (hoje) ✅ | Visão do produto e backlog |
 | P2 | 14/10 | Documento de requisitos |
 | P3 | 16/11 | Modelo UML e arquitetura |
 | P4 | 23/11 | Documentação técnica |
