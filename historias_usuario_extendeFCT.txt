@@ -1,0 +1,75 @@
+20 HISTÓRIAS DE USUÁRIO - EXTENDEFCT
+
+ÉPICO 1 - ACESSO DO PROFESSOR
+
+US01 - Login do professor
+Como professor(a) coordenador(a), quero realizar login na plataforma, para que eu possa acessar as funcionalidades de gerenciamento dos meus projetos.
+
+US02 - Encerrar sessão
+Como professor(a) coordenador(a), quero sair da minha conta, para que minha sessão de acesso não permaneça aberta após o uso.
+
+US03 - Impedir acesso não autenticado
+Como professor(a) coordenador(a), quero que a área de gerenciamento exija autenticação, para que somente usuários autorizados possam alterar projetos.
+
+
+ÉPICO 2 - CADASTRO E GERENCIAMENTO DE PROJETOS
+
+US04 - Cadastrar projeto
+Como professor(a) coordenador(a), quero cadastrar um projeto de extensão com título, descrição, área, vagas e contato, para que o projeto possa ser divulgado aos alunos.
+
+US05 - Editar informações gerais do projeto
+Como professor(a) coordenador(a), quero editar de uma vez as informações gerais de um projeto que coordeno (título, descrição e demais dados), para que os dados apresentados aos alunos permaneçam atualizados.
+
+US06 - Atualizar quantidade de vagas
+Como professor(a) coordenador(a), quero atualizar a quantidade de vagas de um projeto já cadastrado sem precisar editar o restante das informações, para que o aluno sempre veja o número correto de oportunidades.
+
+US07 - Atualizar área do projeto
+Como professor(a) coordenador(a), quero alterar a área de um projeto já cadastrado sem precisar editar o restante das informações, para que os alunos continuem encontrando projetos relacionados aos seus interesses mesmo após mudanças de foco do projeto.
+
+US08 - Atualizar curso relacionado
+Como professor(a) coordenador(a), quero alterar o curso relacionado a um projeto já cadastrado sem precisar editar o restante das informações, para que os alunos localizem projetos relevantes mesmo que o curso vinculado mude ao longo do tempo.
+
+US09 - Atualizar contato
+Como professor(a) coordenador(a), quero alterar o e-mail de contato do projeto, para que os alunos tenham sempre um canal válido para tirar dúvidas e demonstrar interesse.
+
+US10 - Marcar projeto como ativo
+Como professor(a) coordenador(a), quero definir se um projeto está ativo, para que somente projetos disponíveis sejam apresentados na vitrine pública.
+
+
+ÉPICO 3 - VITRINE PÚBLICA
+
+US11 - Visualizar projetos ativos
+Como aluno(a) da FCT, quero visualizar uma lista dos projetos de extensão ativos, para que eu possa descobrir oportunidades de participação em um único lugar.
+
+US12 - Visualizar detalhes do projeto
+Como aluno(a) da FCT, quero abrir a página de detalhes de um projeto, para que eu possa conhecer melhor a oportunidade antes de entrar em contato com o professor.
+
+US13 - Visualizar informações principais na vitrine
+Como aluno(a) da FCT, quero ver na listagem o título, a área e o professor responsável pelo projeto, para que eu consiga identificar rapidamente quais projetos são relevantes para mim.
+
+US14 - Visualizar disponibilidade de vagas
+Como aluno(a) da FCT, quero visualizar a quantidade de vagas de um projeto, para que eu possa saber se ainda existem oportunidades de participação.
+
+US15 - Acessar contato do professor
+Como aluno(a) da FCT, quero visualizar o e-mail de contato do professor responsável, para que eu possa demonstrar meu interesse no projeto.
+
+
+ÉPICO 4 - BUSCA E FILTROS
+
+US16 - Filtrar por área
+Como aluno(a) da FCT, quero filtrar os projetos por área, para que eu encontre mais rapidamente projetos relacionados aos meus interesses.
+
+US17 - Filtrar por curso
+Como aluno(a) da FCT, quero filtrar os projetos por curso, para que eu encontre oportunidades relacionadas à minha formação.
+
+US18 - Buscar por professor
+Como aluno(a) da FCT, quero buscar projetos pelo nome do professor, para que eu possa encontrar rapidamente projetos coordenados por um professor específico.
+
+
+ÉPICO 5 - EXPERIÊNCIA E CONFIABILIDADE
+
+US19 - Informar quando não houver projetos
+Como aluno(a) da FCT, quero receber uma mensagem quando minha busca ou filtro não encontrar projetos, para que eu saiba que o sistema realizou a consulta corretamente.
+
+US20 - Atualização imediata na vitrine
+Como professor(a) coordenador(a), quero que um projeto cadastrado ou atualizado apareça com suas novas informações na vitrine, para que os alunos sempre consultem os dados mais recentes.
