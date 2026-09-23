@@ -76,8 +76,8 @@ P0 (escopo) e P1 (visão do produto e backlog) entregues. Ainda não há impleme
 
 | Entrega | Data | Conteúdo |
 |---|---|---|
-| P0 | 11/09 ✅ | Equipe, repositório e canvas |
-| P1 | 23/09 (hoje) ✅ | Visão do produto e backlog |
+| P0 | 11/09 OK | Equipe, repositório e canvas |
+| P1 | 23/09 (hoje) OK | Visão do produto e backlog |
 | P2 | 14/10 | Documento de requisitos |
 | P3 | 16/11 | Modelo UML e arquitetura |
 | P4 | 23/11 | Documentação técnica |
