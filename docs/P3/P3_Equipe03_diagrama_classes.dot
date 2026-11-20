@@ -1,0 +1,56 @@
+// Diagrama de classes do fluxo único (P0) — ExtendeFCT · Equipe 03
+// Gerar a imagem: dot -Tpng -Gdpi=200 P3_Equipe03_diagrama_classes.dot -o P3_Equipe03_diagrama_classes.png
+digraph ExtendeFCT {
+  graph [rankdir=LR, splines=ortho, nodesep=0.9, ranksep=2.3, fontname="Helvetica", pad=0.3];
+  node  [shape=plain, fontname="Helvetica", fontsize=11];
+  edge  [dir=none, fontname="Helvetica", fontsize=10, labeldistance=1.8, labelangle=30];
+
+  Coordenador [label=<
+    <table border="1" cellborder="0" cellspacing="0" cellpadding="5">
+      <tr><td bgcolor="#171d38"><font color="white"><b>Coordenador</b></font></td></tr>
+      <tr><td align="left" sides="t" border="1">nome<br align="left"/>contaInstitucional<br align="left"/></td></tr>
+      <tr><td align="left" sides="t" border="1">cadastrarProjeto()<br align="left"/></td></tr>
+    </table>>];
+
+  Sessao [label=<
+    <table border="1" cellborder="0" cellspacing="0" cellpadding="5">
+      <tr><td bgcolor="#171d38"><font color="white"><b>Sessao</b></font></td></tr>
+      <tr><td align="left" sides="t" border="1">inicio<br align="left"/>ultimaAtividade<br align="left"/></td></tr>
+      <tr><td align="left" sides="t" border="1">iniciar()<br align="left"/>encerrar()<br align="left"/>estaValida()<br align="left"/></td></tr>
+    </table>>];
+
+  ProjetoDeExtensao [label=<
+    <table border="1" cellborder="0" cellspacing="0" cellpadding="5">
+      <tr><td bgcolor="#171d38"><font color="white"><b>ProjetoDeExtensao</b></font></td></tr>
+      <tr><td align="left" sides="t" border="1">titulo<br align="left"/>descricao<br align="left"/>vagas<br align="left"/>emailContato<br align="left"/>ativo<br align="left"/>aprovadoPelaProex<br align="left"/></td></tr>
+      <tr><td align="left" sides="t" border="1">editar()<br align="left"/>atualizarVagas()<br align="left"/>atualizarAreas()<br align="left"/>atualizarCurso()<br align="left"/>atualizarEmail()<br align="left"/>definirSituacao()<br align="left"/>registrarAprovacao()<br align="left"/>estaVisivel()<br align="left"/></td></tr>
+    </table>>];
+
+  Area [label=<
+    <table border="1" cellborder="0" cellspacing="0" cellpadding="5">
+      <tr><td bgcolor="#171d38"><font color="white"><b>Area</b></font></td></tr>
+      <tr><td align="left" sides="t" border="1">nome<br align="left"/></td></tr>
+    </table>>];
+
+  Curso [label=<
+    <table border="1" cellborder="0" cellspacing="0" cellpadding="5">
+      <tr><td bgcolor="#171d38"><font color="white"><b>Curso</b></font></td></tr>
+      <tr><td align="left" sides="t" border="1">nome<br align="left"/></td></tr>
+    </table>>];
+
+  Vitrine [label=<
+    <table border="1" cellborder="0" cellspacing="0" cellpadding="5">
+      <tr><td bgcolor="#171d38"><font color="white"><b>Vitrine</b></font></td></tr>
+      <tr><td align="left" sides="t" border="1"> </td></tr>
+      <tr><td align="left" sides="t" border="1">listarProjetos()<br align="left"/>filtrarPorArea()<br align="left"/>filtrarPorCurso()<br align="left"/>buscarPorProfessor()<br align="left"/>exibirDetalhes()<br align="left"/></td></tr>
+    </table>>];
+
+  Sessao      -> Coordenador       [xlabel="abre", taillabel="0..1", headlabel="1"];
+  Coordenador -> ProjetoDeExtensao [xlabel="coordena", taillabel="1", headlabel="0..*"];
+  Vitrine     -> ProjetoDeExtensao [xlabel="exibe", taillabel="0..1", headlabel="0..*"];
+  ProjetoDeExtensao -> Area  [xlabel="pertence a", taillabel="0..*", headlabel="1..*"];
+  ProjetoDeExtensao -> Curso [xlabel="cursoRelacionado", taillabel="0..*", headlabel="1"];
+
+  {rank=same; Sessao; Vitrine;}
+  {rank=same; Area; Curso;}
+}
