@@ -17,23 +17,23 @@ A divulgação de projetos de extensão da FCT hoje é fragmentada: cada profess
 
 ## Por que a solução vale a pena
 
-A solução vale a pena pois possibilita agrupar as informações de projetos de extensão na UFPA em um só lugar.
+A solução vale a pena pois reúne em um só lugar as informações dos projetos de extensão da FCT.
 
-## Fluxo único (P0)
+## Fluxo único
 
 O menor caminho de ponta a ponta que já entrega valor:
 
-1. **Professor(a) faz login** e acessa a área de gerenciamento.
-2. **Professor(a) cadastra o projeto** que coordena (título, descrição, área, vagas, contato).
-3. O projeto passa a aparecer automaticamente na **vitrine pública**, visível a qualquer visitante.
+1. **Professor(a) faz login** com a conta institucional da UFPA e acessa a área de gerenciamento.
+2. **Professor(a) cadastra o projeto** que coordena (título, descrição, áreas, curso, vagas, e-mail de contato).
+3. Depois de **aprovado pela PROEX**, o projeto ativo passa a aparecer automaticamente na **vitrine pública**, visível a qualquer visitante.
 4. **Aluno(a) acessa a vitrine**, filtra por área/curso e abre a **página de detalhes** do projeto.
 5. Aluno(a) entra em contato pelo email divulgado pelo(a) professor(a).
 
-## Escopo desta entrega (P0)
+## Escopo do MVP
 
 **Obrigatório (Must)**:
 - Cadastro e edição de projeto pelo(a) professor(a) autenticado.
-- Vitrine pública listando os projetos ativos.
+- Vitrine pública listando os projetos ativos e aprovados pela PROEX.
 - Página de detalhes de um projeto.
 
 **Desejável (Should)**:
@@ -49,9 +49,9 @@ O menor caminho de ponta a ponta que já entrega valor:
 
 ## Stakeholders
 
-- **Usa:** aluno(a) da FCT (consulta) e professor(a) coordenador(a) (publica e mantém).
-- **É afetado sem usar diretamente:** a coordenação da FCT, que ganha visibilidade institucional das ações de extensão.
-- **Pode vetar:** a coordenação de extensão da FCT, por se tratar de divulgação oficial vinculada a professores da faculdade.
+- **Usa:** aluno(a) da FCT e visitante público (consultam) e professor(a) coordenador(a) (publica e mantém).
+- **É afetado sem usar diretamente:** a coordenação da FCT, que ganha visibilidade institucional das ações de extensão, e a equipe de TI que hospeda a plataforma.
+- **Pode vetar:** a PROEX (Pró-Reitoria de Extensão), que aprova cada projeto antes de ele aparecer na vitrine.
 
 ## Equipe
 
@@ -70,16 +70,26 @@ O menor caminho de ponta a ponta que já entrega valor:
 
 ## Status
 
-P0 (escopo) e P1 (visão do produto e backlog) entregues. Ainda não há implementação.
+P0, P1 e P2 entregues. P3 em andamento: a primeira versão do diagrama de classes do fluxo único já está em `docs/P3/`. Ainda não há implementação.
+
+## Documentos
+
+| Entrega | Arquivo |
+|---|---|
+| P1 | [Histórias de usuário](historias_usuario_extendeFCT.txt) |
+| P2 | [Documento de requisitos v1.0](docs/P2/Modelo%20P2-V1.0-%20Documento%20de%20Requisitos.pdf) · [v0.2](docs/P2/Modelo%20P2_V0.2-%20Documento%20de%20Requisitos%20.pdf) · [v0.1](docs/P2/Modelo%20P2-V0.1-%20Documento%20de%20Requisitos.pdf) |
+| P2 | [Inspeção cruzada (System Lab)](docs/P2/inspecao_systemlab_P2.pdf) |
+| P3 | [Diagrama de classes](docs/P3/P3_Equipe03_diagrama_classes.png) ([fonte Graphviz](docs/P3/P3_Equipe03_diagrama_classes.dot)) |
+| Estudo dirigido 18/11 | [Respostas](docs/estudo-dirigido-18-11/) |
 
 ## Cronograma
 
 | Entrega | Data | Conteúdo |
 |---|---|---|
 | P0 | 11/09 OK | Equipe, repositório e canvas |
-| P1 | 23/09 (hoje) OK | Visão do produto e backlog |
-| P2 | 14/10 | Documento de requisitos |
-| P3 | 16/11 | Modelo UML e arquitetura |
+| P1 | 23/09 OK | Visão do produto e backlog |
+| P2 | 14/10 OK | Documento de requisitos |
+| P3 | 16/11 (em andamento) | Modelo UML e arquitetura |
 | P4 | 23/11 | Documentação técnica |
 | P5 | 02/12 | Testes e integração contínua |
 | P6 | 16/12 | Repositório e release |
